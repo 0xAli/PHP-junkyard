@@ -13,7 +13,7 @@
 	mysql_select_db("blog");
 	
 	// Get a query with all items in the table first.
-	$tquery  = mysql_query("SELECT * FROM `ebws`");              // Edit this to match your needs
+	$tquery  = mysql_query("SELECT * FROM `news`");              // Edit this to match your needs
 	$query   = mysql_query("SELECT * FROM `news` LIMIT $limit"); // Edit this to match your needs
 	
 	$numrows = mysql_num_rows($tquery);          // How many items are there?
