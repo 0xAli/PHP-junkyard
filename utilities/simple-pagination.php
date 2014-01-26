@@ -14,7 +14,13 @@
 	
 	// Get a query with all items in the table first.
 	$tquery  = mysql_query("SELECT * FROM `news`");              // Edit this to match your needs
-	$query   = mysql_query("SELECT * FROM `news` LIMIT $limit"); // Edit this to match your needs
+	
+	### Print the stuff you want here ###
+	// $query   = mysql_query("SELECT * FROM `news` LIMIT $limit"); // Edit this to match your needs
+	// while($info = mysql_fetch_assoc($query)){
+	// 	print $info['title'];
+	//}
+	#####################################
 	
 	$numrows = mysql_num_rows($tquery);          // How many items are there?
 	$pagecount = ceil($numrows/$perpage);        // Total page count
